@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++1z   CMakeFiles/String.dir/myString.cpp.o  -o String -rdynamic 

@@ -1,0 +1,3 @@
+/home/Mav/OOP/OOP_Practice/String/build/CMakeFiles/edit_cache.dir
+/home/Mav/OOP/OOP_Practice/String/build/CMakeFiles/rebuild_cache.dir
+/home/Mav/OOP/OOP_Practice/String/build/CMakeFiles/String.dir

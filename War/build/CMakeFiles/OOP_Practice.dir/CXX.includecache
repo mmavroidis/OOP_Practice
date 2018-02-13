@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Mav/OOP/OOP_Practice/War/card.cpp
+
+/home/Mav/OOP/OOP_Practice/War/card.hpp
+
+/home/Mav/OOP/OOP_Practice/War/main.cpp
+card.hpp
+/home/Mav/OOP/OOP_Practice/War/card.hpp
+iostream
+-
+
