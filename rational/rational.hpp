@@ -30,11 +30,20 @@ class rational{
 		return!(L==r);
 	}
 	
-	bool operator<(const rational& L, const rational& r){}
-	bool operator>(const rational& L, const rational& r){}
-	bool operator<=(const rational& L, const rational& r){}
-	bool operator>=(const rational& L, const rational& r){}
-	
+	bool operator<(const rational& L, const rational& r){
+		if((L.n*r.d)<(L.d*r.n))
+			return true;
+		else return false;
+	}
+	bool operator>(const rational& L, const rational& r){
+		return(r<L);
+	}
+	bool operator<=(const rational& L, const rational& r){
+		return !(L>r);
+	}
+	bool operator>=(const rational& L, const rational& r){
+		return !(L<r);
+	}
 	rational& operator+(const rational& L, const rational& r){}
 	rational& operator-(const rational& L, const rational& r){}
 	rational& operator*(const rational& L, const rational& r){}
