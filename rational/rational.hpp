@@ -36,7 +36,7 @@ class rational{
 		else return false;
 	}
 	bool operator>(const rational& L, const rational& r){
-		return(r<L);
+		return (r<L);
 	}
 	bool operator<=(const rational& L, const rational& r){
 		return !(L>r);
@@ -44,7 +44,19 @@ class rational{
 	bool operator>=(const rational& L, const rational& r){
 		return !(L<r);
 	}
-	rational& operator+(const rational& L, const rational& r){}
+	rational& operator+(const rational& L, const rational& r){
+		rational rat;
+		
+		if(l.d==r.d){
+			rat.n= L.n+r.n;
+			rat.d= l.d;
+		}
+		else{
+			rat.n= (L.n*r.d)+(r.n*L.d);
+			rat.d= L.d*r.d;
+		}
+		return rat;
+}
 	rational& operator-(const rational& L, const rational& r){}
 	rational& operator*(const rational& L, const rational& r){}
 	rational& operator/(const rational& L, const rational& r){}
