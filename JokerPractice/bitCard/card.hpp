@@ -57,10 +57,9 @@ public:
 	
 	Card(const Card& c) { this->bits = c.bits; }
 
-	// Assignment overload
-	operator=(const Card& c) { this->bits = c.bits; }
 
-	// Accessors
+	operator=(const Card& c) { this->bits = c.bits; }
+	//Getters 
 	Type getType() const { return (Type)((0b10000000 & bits) >> 7); }
 	Color getColor() const { return (Color)((0b01000000 & bits) >> 6);
 	Suit getSuit() const { return (Suit)((0b110000 & bits) >> 4); }
